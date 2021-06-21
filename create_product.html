@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>mitiendita.com</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <!-- My CSS -->
+  <link rel="stylesheet" href="/css/main.css">
+  <!-- Fontawesome: -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"
+    integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+  <!-- Favicon: -->
+  <link rel="icon" href="https://media.giphy.com/media/Ln8PH3lMNS905ja5fj/giphy.gif">
+</head>
+
+<body>
+  <!-- NavBar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navigation">
+    <div class="container-fluid d-flex" id="maincontainer">
+
+      <a class="navbar-brand" href="/">
+        <img src="https://media.giphy.com/media/Ln8PH3lMNS905ja5fj/giphy.gif" alt="" width="70" height=""
+          class="d-inline-block align-text-top">
+
+      </a>
+      <a href="/" class="navbar-brand"> <strong>MI TIENDITA &#128722;</strong> </a>
+      <div class="">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Todos los Productos</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+              Categorías</a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-item">categoria 1</li>
+              <li class="dropdown-item">categoria 2</li>
+              <li class="dropdown-item">categoria 3</li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-danger " href="./create_product.html">Añadir Productos</a>
+          </li>
+        </ul>
+      </div>
+      <!--  <div class="col">
+        <p> Algo de contenidooo</p>
+      </div>-->
+    </div>
+  </nav>
+
+  <!-- Create Product -->
+  <div class="container mt-5">
+    <div class="row">
+      
+      <div class="col-4 mx-auto">
+        <div class="text-center">
+          <h1>Agrega un nuevo producto &#128071;</h1>
+          <br>
+        </div>
+        <div>
+          <label class="form-label" for="product_name"> <strong>Nombre del producto</strong> </label>
+          <input class="form-control" type="text" name="product_name" id="product-name-input" value="">
+        </div>
+        <div>
+          <label class="form-label" for="product_description">Descripcion</label>
+          <textarea class="form-control" name="name" id="product-description-textarea"></textarea>
+        </div>
+        <div>
+          <label class="form-label" for="product_image">Imagen</label>
+          <input type="text" class="form-control" name="product_name" id="image-url-input">
+          <br>
+        </div>
+        <div class="text-center">
+          <a href="#" class="btn btn-outline-success" id="btn-save">Guardar</a>
+          <a href="/" class="btn btn-outline-danger">Cancelar</a>
+        </div>
+
+      </div>
+      
+      <div class="col-md-4 mx-auto add__product">
+        <div class="text-center">
+          <h2>Puedes usar los siguientes enlaces para agregar una imágen aleatoria:</h2>
+          <br>
+        </div>
+        <div>
+          <br>
+          <p>https://via.placeholder.com/300x300</p>
+          <br>
+          <p>https://source.unsplash.com/random/300x300</p>
+          <br>
+          <p>https://picsum.photos/300/300</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+
+  <!-- COOKIES-->
+  <div class="wrapper">
+    <div class="notice-cookies active-cookies" id="notice-cookies">
+      <img src="https://image.flaticon.com/icons/png/512/541/541732.png" alt="" class="img-cookies">
+      <h3 class="title-cookies"> Cookies </h3>
+      <p class="paragraph">Utilizamos cookies propias y de terceros para obtener datos estadísticos de la navegación de
+        nuestros usuarios y mejorar nuestros servicios.</p>
+      <button class="btn-cookies" id="btn-accept-cookies">De acuerdo</button>
+      <a class="link" href="/cookies.html">Aviso de Cookies</a>
+    </div>
+  </div>
+  <div class="notice-cookies-background active-cookies" id="notice-cookies-background"></div>
+
+  <!-- WHATSAPP ICON-->
+  <a href="https://api.whatsapp.com/send?phone=+5111111111" class="btn-wsp" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- MY FOOTER -->
+  <footer class="bg-dark m-flex text-white ">
+    <div class="row">
+      <div class="box__footer col-md-3 mx-auto">
+        <div class="logo">
+          <img src="https://media.giphy.com/media/Ln8PH3lMNS905ja5fj/giphy.gif" width="130" alt="">
+        </div>
+        <div class="terms">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, consequuntur! Fugiat autem dolor
+            voluptatum illo quibusdam eos eius soluta ipsa beatae dolorum, ratione dolorem iste similique adipisci
+            aliquid qui commodi?</p>
+        </div>
+      </div>
+
+      <div class="box__footer col-md-3 mx-auto">
+        <h3>Enlaces útiles</h3>
+        <a href="#!" class="text-white">Política de Privacidad</a>
+        <br>
+        <a href="/cookies.html" class="text-white">Política de Cookies</a>
+        <br>
+        <a href="#!" class="text-white">Aviso Legal</a>
+        <br>
+        <a href="#!" class="text-white">Términos y condiciones</a>
+      </div>
+
+      <div class="box__footer col-md-3 mx-auto">
+        <h3>Sobre Nosotros</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium sit odit velit amet, doloribus quibusdam
+          iure et quaerat nulla quae expedita ad nostrum sed aperiam cupiditate voluptate? Pariatur, provident impedit?
+        </p>
+      </div>
+      <div class="box__footer col-md-2 mx-auto">
+        <h3>Redes Sociales</h3>
+        <!-- Facebook -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+        <!-- Instagram -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+        <!-- Twitter -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+        <!-- Youtube -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+    <div class="text-center footer__bar">
+      <hr>
+      <br>
+      <p>Todos los derechos reservados © 2021 <a href="/" class="text-white"><strong>mitiendita.com</strong></a> </p>
+      <br>
+    </div>
+  </footer>
+
+
+
+  <!-- Boostrap script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins)-->
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+
+  <!-- Include all compiled plugins (below), or include individual files as needed-->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+
+
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+       https://firebase.google.com/docs/web/setup#available-libraries -->
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+  <!--Importa las capacidades de las bases de datos:-->
+  <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-database.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyA_4Cxv4HiO4z9TpLqHah9qC4cIr6aDrk4",
+      authDomain: "kodecamp-587ac.firebaseapp.com",
+      projectId: "kodecamp-587ac",
+      storageBucket: "kodecamp-587ac.appspot.com",
+      messagingSenderId: "221457765557",
+      appId: "1:221457765557:web:7132f9a24579a5030d5afc",
+      databaseURL: "https://kodecamp-587ac-default-rtdb.firebaseio.com/"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+
+  <!-- script of cookies -->
+  <script src="/js/cookies_notice.js" charset="utf-8"></script>
+
+  <!--  SCRIPT create product  -->
+  <script src="/js/create_product.js" charset="utf-8"></script>
+
+</body>
+
+</html>

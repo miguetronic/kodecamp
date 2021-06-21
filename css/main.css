@@ -1,0 +1,185 @@
+/* Estilos principales de mi página web*/
+
+.product-card {
+  width: 300px;
+}
+
+body {
+  background-color: #f9f6f7;
+}
+
+h1 {
+  text-align:center;
+  color: #132c33;
+}
+
+/* h3 {
+  color: #126e82;
+} */
+
+hr, .container hr {
+  margin: auto;
+  background-color: #f9f6f7;
+  border-style: dotted none none none;
+  border-color: grey;
+  border-width: 10px;
+  width: 30%;/**/
+}
+
+/* About us */
+
+.box_about{
+  background-color: #FFC93C;
+  padding: 20px;
+  border-radius: 40px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+}
+.box_about h1{
+  color:#FFF;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+
+/* Contact us */
+
+.box_contact{
+  background-color: #FC5F71;
+  padding: 20px;
+  border-radius: 40px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+}
+.box_contact h1{
+  color:#FFF;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* add product */
+
+.add__product{
+  background-color: #FFC93C;
+  padding: 20px;
+  border-radius: 40px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+
+}
+
+/*Cookies*/
+.notice-cookies{
+  display:none;
+  background-color: #fff;
+  padding: 20px;
+  width: calc(100% - 40px);
+  max-width: 300px;
+  line-height: 150%;
+  border-radius: 20px;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 100;
+  padding-top:60px;
+  box-shadow: 0px 2px 20px 10px rgba(222,222,222,.25);
+  text-align: center;
+}
+
+.notice-cookies.active-cookies{
+  display: block;
+}
+
+.notice-cookies .img-cookies{
+  max-width: 100px;
+  position: absolute;
+  top: -50px;
+  left: calc(50% - 50px);
+}
+
+.notice-cookies .title-cookies, .paragraph{
+  margin-bottom: 15px;
+}
+
+.notice-cookies .btn-cookies{
+  width: 100%;
+  background-color: #595959;
+  border: none;
+  color: #fff;
+  text-align: center;
+  padding: 15px 20px;
+  font-weight: 700;
+  cursor: pinter;
+  transition: .3s ease all;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.notice-cookies .btn-cookies:hover{
+  background-color: #000;
+}
+
+.notice-cookies .link {
+  color:#000#4dbfff;
+  text-decoration: none;
+}
+
+.notice-cookies .link:hover {
+  text-decoration: underline;
+}
+
+.notice-cookies-background{
+  display: none;
+  background: rgba(0,0,0,.60);
+  position: fixed;
+  z-index: 99;
+  width: 100vw;
+  height: 100vh;
+  top:0;
+  left:0;
+}
+
+.notice-cookies-background.active-cookies{
+  display: block;
+}
+
+/*Whatsapp*/
+.btn-wsp{
+  position:fixed;
+  width:60px;
+  height:60px;
+  line-height: 56px;
+  bottom:25px;
+  right:25px;
+  background:#25d366;
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  font-size:45px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+  z-index:100;
+  transition: all 400ms ease;
+}
+.btn-wsp:hover{
+  color:#20ba5a;
+  background: #fff;
+}
+
+
+/*Footer*/
+.box__footer{
+  padding: 20px;
+}
+
+.box__footer a:hover{
+  opacity: 0.6;
+}
+
+.footer__bar {
+  background-color: #171717;
+}
+
+.footer__bar hr{
+  border: none;
+  border-style: none;
+  height: 9px;
+  width: 100%;
+  background-color: #aaa6a6;
+}
